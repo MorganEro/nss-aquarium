@@ -1,0 +1,112 @@
+.header { 
+    background-color: aqua;
+    background-size: 100px;
+    font-size: 100px;
+    font-family:'Abril Fatface', cursive;
+    text-align: center;
+     
+}
+
+body {
+    background-color:#D0F9F0;  
+    
+   
+}
+.leftColumn {
+    float:left;
+    width: 70%;
+    border-width: 1px white;
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+.rightColumn {
+    float: right;
+    width: 30%;
+    height: 800px;
+    background-image: url("https://images.unsplash.com/photo-1582623838120-455da222cdc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c2VhJTIwbGlmZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60");
+    opacity: 0.6;
+    border-width: 1px white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+    
+}
+.rightColumn__font{
+    position: absolute;
+    font-size: 20px;
+    font-family:'Abril Fatface', cursive;
+    text-align: right;
+    opacity: 1;
+    margin: 10px;
+
+}
+
+.fish__imageAndDetails {
+    display: flex;
+    background-image: url("https://www.thesprucepets.com/thmb/prlNHRyw-NV4cS5X8jFZt14OdmI=/941x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/siamese-fighting-fish-bettas-1378308-hero-f459084da1414308accde7e21001906c.jpg");
+    width: 300px ;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid black;
+    border-radius: 5px;
+    position: relative;
+    cursor:pointer;
+    margin: 40px;
+}
+
+.fish__imageAndDetails > input{
+    display:none;
+
+}
+
+
+.fish__imageAndDetails > h2 {
+    margin: 3px;
+    
+    
+}
+.fish__imageAndDetails > div, .fish__imageAndDetails >h2 {
+    position:absolute;
+    background-color: rgba(230, 236, 241, .9);
+    font-size: 20px;
+    font-family:'Abril Fatface', cursive;
+    text-align: center;
+    bottom: 15px;
+    left:5px;
+    right: 5px;
+    border-radius: 5px;
+    padding: 8px;
+    overflow: hidden;
+    opacity: 0;
+    transition: .3s;
+}
+.fish__imageAndDetails:hover > h2, .fish__imageAndDetails > input:checked + h2 + div {
+    opacity: 1 ;
+    bottom: 4px
+}
+
+.fish__imageAndDetails >input:checked + h2{
+    bottom: -20px;
+    opacity:0;
+}
+
+
+.fish__name {
+    font-family:'Abril Fatface', cursive;
+    font-size: 50px;
+    border: 0px;
+    margin: 10px;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+   
+
+
+}
+    
